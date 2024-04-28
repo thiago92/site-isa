@@ -1,0 +1,563 @@
+* {
+    font-family: "Didact Gothic", sans-serif;
+}
+
+ul, ul li {
+    list-style: none;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    align-items: end;
+    justify-content: end;
+}
+
+/* 
+    cores pardão -> #021859; #022859; #2A7ABF; #548DBF; #D9D9D9
+        
+*/
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #D9D9D9 !important;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+    color: #021859;
+    font-weight: 800;
+}
+
+.navbar-brand span {
+    font-weight: 400;
+}
+
+.logo-nav {
+    width: 5%;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.active {
+    font-weight: 800;
+    color: #021859 !important;
+}
+
+.nav-link {
+    color: #021859 !important;
+}
+
+.btn-costum {
+    background-color: #021859;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #d9d9d9;
+    letter-spacing: 2px;
+}
+
+.banner {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0,0.5)), url(../assets/sao-jose.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 700px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner .container h2 {
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.banner .container p {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about {
+    height: 700px;
+    background-image: url(../assets/isa-foto-1.jpg);
+    background-size: 50%;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.about-container {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0));
+}
+
+.about .container, .about .row {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.about h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #548DBF;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+.about .about-container .container .row .col-sm-6:nth-child(2) .about-img {
+    display: none;
+}
+
+.chronometer {
+    background-image: linear-gradient(#022859, #022859c4), url(../assets/Bandeira_de_SJP.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.chronometer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.chronometer h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+.chronometer p {
+    font-size: 38px;
+    font-weight: 600;
+    color: white;
+}
+
+.chronometer .days-hours {
+    background-color: #D9D9D9;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    color: #021859;
+}
+
+.chronometer .days-hours span {
+    font-size: 24px;
+    font-weight: 60;
+}
+
+.electoral-stronghold {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.electoral-stronghold .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.electoral-stronghold h2 {
+    text-align: start;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.electoral-stronghold p {
+    font-size: 24px;
+    text-align: justify;
+}
+
+.electoral-stronghold .col-sm-6:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.electoral-stronghold .col-sm-6:nth-child(2) {
+    text-align: center;
+}
+
+.electoral-stronghold img {
+    width: 60%;
+    border-radius: 0 20px 0 20px;
+}
+
+.project {
+    background-image: linear-gradient(#022859b6, #022859b6), url(../assets/vector.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+
+.project .container {
+    height: 100%;
+}
+
+.project .row {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.project .col-sm-4 {
+    cursor: pointer;
+}
+
+.project h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #D9D9D9;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.project span {
+    font-size: 24px;
+    color: #D9D9D9;
+}
+
+.project .title {
+    width: 100%;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.project .title h2{
+    font-size: 38px;
+}
+
+::ng-deep .modal-content {
+    width: 1000px !important;
+}
+
+::ng-deep .modal-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #D9D9D9;
+}
+
+::ng-deep .modal-body {
+    font-size: 24px;
+    text-align: justify;
+}
+
+::ng-deep .modal-body img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+::ng-deep .modal-dialog {
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+::ng-deep .modal-header {
+    background-color: #548DBF;
+}
+
+/* cores pardão -> #021859; #022859; #2A7ABF; #548DBF; #D9D9D9 */
+
+.conclusion {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.conclusion h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #021859;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid #021859;
+    text-align: center;
+}
+
+.conclusion p {
+    font-size: 24px;
+    text-align: justify;
+}
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #021859;
+}
+
+footer .col-sm-4:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+footer .col-sm-4:nth-child(1) p {
+    font-size: 22px;
+    font-weight: 700;
+    color: #D9D9D9;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+footer .col-sm-4:nth-child(1) p span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer .col-sm-4:nth-child(1) img{
+    width: 30%;
+    border-radius: 100%;
+}
+
+footer .col-sm-4:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .col-sm-4:nth-child(2) h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #D9D9D9;
+}
+
+footer .col-sm-4:nth-child(2) li {
+    font-size: 20px;
+    font-weight: 500;
+    color: #D9D9D9;
+}
+
+footer fa-icon {
+    margin-right: 5px;
+}
+
+footer .col-sm-4:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: column; 
+}
+
+footer .col-sm-4:nth-child(3) h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #D9D9D9;
+    margin-bottom: 20px;
+}
+
+footer .col-sm-4:nth-child(3) .col {
+    height: 60px;
+    width: 60px;
+    background-color: #D9D9D9;
+    border-radius: 100%;
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .col-sm-12 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #d9d9d9;
+    margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+    .logo-nav {
+        width: 14%;
+    }
+
+    .navbar-brand {
+        margin-left: -15px;
+    }
+
+    .banner {
+        height: 350px;
+    }
+
+    .banner .container h2 {
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .banner .container p {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .btn-costum {
+        padding: 5px 20px;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .about {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-image: none;
+    }
+
+    .about-container {
+        background: none;
+    }
+
+    .about h2 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    
+    .about p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .about .about-container .container {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    .about .about-container .container .row {
+        padding: 0;
+    }
+
+    .about .about-container .container .row .col-sm-6:nth-child(2) .about-img {
+        display: block;
+    }
+
+    .about .about-container .container .row .col-sm-6:nth-child(2) .about-img img {
+        width: 100%;
+    }
+
+    .chronometer {
+        margin-top: 350px;
+    }
+
+    .chronometer h2 {
+     font-size: 24px;
+    }
+
+    .chronometer p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .chronometer .col-sm-3 {
+        width: 50%;
+    }
+
+    .chronometer .col-sm-3:nth-child(3), .chronometer .col-sm-3:nth-child(4) {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .electoral-stronghold h2 {
+        font-size: 24px;
+    }
+
+    .electoral-stronghold p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .electoral-stronghold img {
+        width: 100%;
+    }
+
+    .project {
+        height: 1200px;
+    }
+
+    .project h2 {
+        font-size: 28px !important;
+    }
+
+    ::ng-deep .modal-content {
+        width: 100% !important;
+    }
+    
+    ::ng-deep .modal-title {
+        font-size: 24px;
+    }
+    
+    ::ng-deep .modal-body {
+        font-size: 18px;
+    }
+    
+    ::ng-deep .modal-dialog {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .conclusion h2 {
+        font-size: 24px;
+    }
+    
+    .conclusion p {
+        font-size: 18px;
+    }
+
+    footer .col-sm-4:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    footer .col-sm-4:nth-child(3) {
+        margin-top: 20px;
+    }
+
+    footer .col-sm-4:nth-child(3) .col {
+        height: 60px;
+        width: 60px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
