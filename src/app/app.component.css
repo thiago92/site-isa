@@ -9,6 +9,11 @@ ul, ul li {
     margin-bottom: 5px;
 }
 
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
 .navbar-expand-lg .navbar-collapse {
     align-items: end;
     justify-content: end;

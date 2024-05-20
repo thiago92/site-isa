@@ -77,4 +77,8 @@ export class AppComponent {
 				return `with: ${reason}`;
 		}
 	}
+
+  goToLink(url: string){
+    window.open(url, "_blank");
+  }
 }
