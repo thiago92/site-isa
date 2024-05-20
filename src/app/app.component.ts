@@ -39,9 +39,18 @@ export class AppComponent {
 
   timer() {
     setInterval(() => {
-      const targetDate = new Date('2024-10-06');
+      const targetDate = new Date('2024-10-06T00:00:00-03:00'); // Data e hora alvo em fuso horário de Brasília
       const now = new Date();
-      const diff = targetDate.getTime() - now.getTime();
+      
+      // Ajustar a hora atual para o fuso horário de Brasília
+      const brTimezoneOffset = 180; // Brasília está 3 horas (180 minutos) atrás de UTC
+      const localTimezoneOffset = now.getTimezoneOffset();
+      const timezoneDifference = localTimezoneOffset - brTimezoneOffset;
+      
+      // Converter a hora atual para o fuso horário de Brasília
+      const nowInBR = new Date(now.getTime() + timezoneDifference * 60000);
+      
+      const diff = targetDate.getTime() - nowInBR.getTime();
       const seconds = Math.ceil(diff / 1000);
       const minutes = Math.floor(seconds / 60);
       const remainingSeconds = Math.round(seconds % 60);
@@ -53,8 +62,9 @@ export class AppComponent {
       this.days = days;
       const remainingHours = Math.round(hours % 24);
       this.hours = remainingHours;
-    }, 1000)
+    }, 1000);
   }
+  
 
   open(content: TemplateRef<any>) {
 		this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then(
