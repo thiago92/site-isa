@@ -41,10 +41,15 @@ a {
 }
 
 .logo-nav {
-    width: 5%;
-    border-radius: 100px;
+    width: 25%;
+    border-radius: 20px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.navbar.scrolled .logo-nav {
+    width: 15%;
+  }
 
 .active {
     font-weight: 800;
@@ -54,6 +59,11 @@ a {
 .nav-link {
     color: #021859 !important;
     cursor: pointer;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    font-weight: 600;
 }
 
 .btn-costum {
@@ -68,7 +78,7 @@ a {
 }
 
 .spaccing {
-    padding: 55px;
+    padding: 85px;
 }
 
 .banner {
@@ -92,7 +102,7 @@ a {
 
 .banner .container h2 {
     font-weight: 700;
-    font-size: 42px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
@@ -189,44 +199,13 @@ a {
 }
 
 .electoral-stronghold {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.electoral-stronghold .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.electoral-stronghold h2 {
-    text-align: start;
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 20px;
+    height: 1900px;
     width: 100%;
-}
-
-.electoral-stronghold p {
-    font-size: 24px;
-    text-align: justify;
-}
-
-.electoral-stronghold .col-sm-6:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.electoral-stronghold .col-sm-6:nth-child(2) {
-    text-align: center;
-}
-
-.electoral-stronghold img {
-    width: 60%;
-    border-radius: 0 20px 0 20px;
+    background-image: url(../assets/proposta.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .project {
@@ -333,10 +312,56 @@ a {
 footer {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #021859;
+    background-image: url(../assets/1062.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
 }
 
-footer .col-sm-4:nth-child(1) {
+footer .row .col-7 img {
+    width: 100%;
+}
+
+footer .row .row .col-12 img {
+    width: 10% !important;
+}
+
+footer .col-5 {
+    padding-top: 200px;
+}
+
+footer h2 {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+footer span {
+    font-size: 28px;
+}
+
+footer .row .row {
+    margin-top: 40px
+}
+
+footer .row .row span {
+    cursor: pointer;
+}
+
+footer .row .row span:nth-child(2) {
+    margin-top: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    font-style: none;
+}
+
+footer a {
+    color: #fff;
+}
+
+/* footer .col-sm-4:nth-child(1) {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -415,7 +440,7 @@ footer .col-sm-12 {
     font-weight: 600;
     color: #d9d9d9;
     margin-top: 20px;
-}
+} */
 
 @media (max-width: 500px) {
     .logo-nav {
