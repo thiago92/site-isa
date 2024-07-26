@@ -81,6 +81,24 @@ a {
     padding: 85px;
 }
 
+@media (max-width: 1500px) {
+    .spaccing {
+        padding: 75px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .spaccing {
+        padding: 65px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .spaccing {
+        padding: 55px;
+    }
+}
+
 .banner {
     background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0,0.5)), url(../assets/sao-jose.webp);
     background-size: cover;
