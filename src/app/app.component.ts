@@ -39,6 +39,8 @@ export class AppComponent {
     } else {
       navbar.classList.remove('scrolled');
     }
+
+    this.timer();
   }
 
   timer() {
