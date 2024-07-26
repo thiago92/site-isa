@@ -214,6 +214,24 @@ a {
     cursor: pointer;
 }
 
+@media (max-width: 1520px) {
+    .electoral-stronghold {
+        height: 1500px;
+    }
+}
+
+@media (max-width: 1420px) {
+    .electoral-stronghold {
+        height: 1350px;
+    }
+}
+
+@media (max-width: 1320px) {
+    .electoral-stronghold {
+        height: 1200px;
+    }
+}
+
 .project {
     background-image: linear-gradient(#022859e3, #022859e3), url(../assets/vector.jpg);
     background-size: cover;
